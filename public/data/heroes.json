@@ -3,63 +3,63 @@
     "id": 1,
     "name": "SUPERMAN",
     "alterEgo": "Clark Kent",
-    "power": "Strength, flight and heat vision",
+    "power": "Fuerza, vuelo y visión de calor",
     "universe": "DC",
-    "description": "A hero with extraordinary strength and a strong sense of justice."
+    "description": "Un héroe con una fuerza extraordinaria y un profundo sentido de la justicia."
   },
   {
     "id": 2,
     "name": "BATMAN",
     "alterEgo": "Bruce Wayne",
-    "power": "Strategy, technology and combat skills",
+    "power": "Estrategia, tecnología y habilidades de combate",
     "universe": "DC",
-    "description": "A detective and strategist who relies on intelligence, discipline and technology."
+    "description": "Un detective y estratega que utiliza su inteligencia, disciplina y tecnología."
   },
   {
     "id": 3,
     "name": "WONDER WOMAN",
-    "power": "Super strength and combat mastery",
+    "power": "Fuerza sobrehumana y dominio del combate",
     "universe": "DC",
-    "description": "A warrior with great power, leadership and compassion."
+    "description": "Una guerrera con gran poder, liderazgo y compasión."
   },
   {
     "id": 4,
     "name": "SPIDERMAN",
     "alterEgo": "Peter Parker",
-    "power": "Agility, spider sense and web shooting",
+    "power": "Agilidad, sentido arácnido y lanzamiento de telarañas",
     "universe": "Marvel",
-    "description": "A young hero known for responsibility, agility and quick reflexes."
+    "description": "Un joven héroe reconocido por su responsabilidad, agilidad y rápidos reflejos."
   },
   {
     "id": 5,
     "name": "IRON MAN",
     "alterEgo": "Tony Stark",
-    "power": "Powered armor and advanced technology",
+    "power": "Armadura avanzada y tecnología",
     "universe": "Marvel",
-    "description": "A genius inventor who uses technology to solve complex problems."
+    "description": "Un inventor brillante que utiliza la tecnología para resolver problemas complejos."
   },
   {
     "id": 6,
     "name": "CAPTAIN AMERICA",
     "alterEgo": "Steve Rogers",
-    "power": "Enhanced strength and tactical leadership",
+    "power": "Fuerza mejorada y liderazgo táctico",
     "universe": "Marvel",
-    "description": "A tactical leader with enhanced abilities and strong values."
+    "description": "Un líder táctico con habilidades mejoradas y valores firmes."
   },
   {
     "id": 7,
     "name": "BLACK WIDOW",
     "alterEgo": "Natasha Romanoff",
-    "power": "Espionage and martial arts",
+    "power": "Espionaje y artes marciales",
     "universe": "Marvel",
-    "description": "A highly trained agent specialized in strategy, stealth and combat."
+    "description": "Una agente altamente entrenada y especializada en estrategia, sigilo y combate."
   },
   {
     "id": 8,
     "name": "FLASH",
     "alterEgo": "Barry Allen",
-    "power": "Super speed",
+    "power": "Supervelocidad",
     "universe": "DC",
-    "description": "A hero with extraordinary speed and fast decision-making."
+    "description": "Un héroe con velocidad extraordinaria y una gran capacidad para tomar decisiones rápidas."
   }
 ]

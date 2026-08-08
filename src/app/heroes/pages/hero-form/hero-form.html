@@ -1,1 +1,82 @@
-<p>hero-form works!</p>
+<section class="hero-form-page">
+  <header class="form-header">
+    <h1>
+      {{ isEditMode() ? editingHeroName() || 'héroe' : 'Crear héroe' }}
+    </h1>
+  </header>
+
+  <form class="form-container" [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+    <div class="form-grid">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput appUppercase formControlName="name" />
+
+        @if (heroForm.controls.name.touched && heroForm.controls.name.hasError('required')) {
+          <mat-error>El nombre es obligatorio.</mat-error>
+        }
+
+        @if (heroForm.controls.name.touched && heroForm.controls.name.hasError('minlength')) {
+          <mat-error>Ingresá al menos 2 caracteres.</mat-error>
+        }
+
+        @if (heroForm.controls.name.touched && heroForm.controls.name.hasError('duplicatedName')) {
+          <mat-error>Ya existe un héroe con ese nombre.</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Identidad</mat-label>
+        <input matInput formControlName="alterEgo" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Poder principal</mat-label>
+        <input matInput formControlName="power" />
+
+        @if (heroForm.controls.power.touched && heroForm.controls.power.hasError('required')) {
+          <mat-error>El poder es obligatorio.</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Universo</mat-label>
+
+        <mat-select formControlName="universe">
+          <mat-option value="DC">DC</mat-option>
+          <mat-option value="Marvel">Marvel</mat-option>
+          <mat-option value="Other">Otro</mat-option>
+        </mat-select>
+
+        @if (
+          heroForm.controls.universe.touched && heroForm.controls.universe.hasError('required')
+        ) {
+          <mat-error>Seleccioná un universo.</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="description-field">
+        <mat-label>Descripción</mat-label>
+
+        <textarea matInput formControlName="description" rows="4"></textarea>
+
+        <mat-hint align="end"> {{ heroForm.controls.description.value.length }}/300 </mat-hint>
+      </mat-form-field>
+    </div>
+
+    @if (submitError()) {
+      <p class="submit-error" role="alert">
+        {{ submitError() }}
+      </p>
+    }
+
+    <div class="form-actions">
+      <button mat-button type="button" [disabled]="isSubmitting()" (click)="onCancel()">
+        Cancelar
+      </button>
+
+      <button mat-flat-button type="submit" [disabled]="heroForm.invalid || heroForm.pending || isSubmitting()">
+        {{ isEditMode() ? 'Guardar cambios' : 'Agregar héroe' }}
+      </button>
+    </div>
+  </form>
+</section>
