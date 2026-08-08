@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "SUPERMAN",
+    "alterEgo": "Clark Kent",
+    "power": "Strength, flight and heat vision",
+    "universe": "DC",
+    "description": "A hero with extraordinary strength and a strong sense of justice."
+  },
+  {
+    "id": 2,
+    "name": "BATMAN",
+    "alterEgo": "Bruce Wayne",
+    "power": "Strategy, technology and combat skills",
+    "universe": "DC",
+    "description": "A detective and strategist who relies on intelligence, discipline and technology."
+  },
+  {
+    "id": 3,
+    "name": "WONDER WOMAN",
+    "power": "Super strength and combat mastery",
+    "universe": "DC",
+    "description": "A warrior with great power, leadership and compassion."
+  },
+  {
+    "id": 4,
+    "name": "SPIDERMAN",
+    "alterEgo": "Peter Parker",
+    "power": "Agility, spider sense and web shooting",
+    "universe": "Marvel",
+    "description": "A young hero known for responsibility, agility and quick reflexes."
+  },
+  {
+    "id": 5,
+    "name": "IRON MAN",
+    "alterEgo": "Tony Stark",
+    "power": "Powered armor and advanced technology",
+    "universe": "Marvel",
+    "description": "A genius inventor who uses technology to solve complex problems."
+  },
+  {
+    "id": 6,
+    "name": "CAPTAIN AMERICA",
+    "alterEgo": "Steve Rogers",
+    "power": "Enhanced strength and tactical leadership",
+    "universe": "Marvel",
+    "description": "A tactical leader with enhanced abilities and strong values."
+  },
+  {
+    "id": 7,
+    "name": "BLACK WIDOW",
+    "alterEgo": "Natasha Romanoff",
+    "power": "Espionage and martial arts",
+    "universe": "Marvel",
+    "description": "A highly trained agent specialized in strategy, stealth and combat."
+  },
+  {
+    "id": 8,
+    "name": "FLASH",
+    "alterEgo": "Barry Allen",
+    "power": "Super speed",
+    "universe": "DC",
+    "description": "A hero with extraordinary speed and fast decision-making."
+  }
+]
