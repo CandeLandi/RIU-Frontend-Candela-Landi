@@ -1,59 +1,43 @@
-# RIUFrontendCandelaLandi
+# RIU Frontend - Candela Landi
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+Aplicación SPA desarrollada con Angular 22 para gestionar superhéroes mediante listado, búsqueda, creación, edición y eliminación.
 
-## Development server
+## Ejecución
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Instalar las dependencias e iniciar la aplicación:
 
 ```bash
-ng generate component component-name
+npm ci
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Disponible en `http://localhost:4200`.
+
+## Tests
 
 ```bash
-ng generate --help
+npm test -- --watch=false
 ```
 
-## Building
-
-To build the project run:
+## Build
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Docker
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Construir la imagen:
 
 ```bash
-ng test
+docker build -t riu-frontend-candela-landi .
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Ejecutar el contenedor:
 
 ```bash
-ng e2e
+docker run --rm -p 8080:80 riu-frontend-candela-landi
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Disponible en `http://localhost:8080`.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
