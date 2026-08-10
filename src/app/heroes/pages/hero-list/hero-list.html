@@ -11,7 +11,7 @@
   </header>
 
   <mat-form-field appearance="outline" class="search-field">
-    <mat-label>Buscar por nombre</mat-label>
+    <mat-label>Buscar</mat-label>
 
     <input
       #searchInput
@@ -70,8 +70,8 @@
               aria-label="Eliminar héroe"
               (click)="onDelete(hero)"
             >
-              <mat-icon>delete</mat-icon></button
-            >
+              <mat-icon>delete</mat-icon>
+            </button>
           </td>
         </ng-container>
 
@@ -87,7 +87,7 @@
       [length]="filteredHeroes().length"
       [pageIndex]="pageIndex()"
       [pageSize]="pageSize()"
-      [pageSizeOptions]="[5, 10]"
+      [hidePageSize]="true"
       (page)="onPageChange($event)"
     />
   </div>
